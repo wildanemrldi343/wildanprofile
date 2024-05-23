@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- box icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css" />
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <a href="#" class="logo">WIL<span>Dev.</span></a>
+
+      <i class="bx bx-menu" id="menu-icon"></i>
+
+      <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Achievement</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+    <!-- Header end -->
+
+    <!-- Home section -->
+    <section class="home" id="home">
+      <div class="home-content">
+        <h3>Hello, It's Me</h3>
+        <h1>Wildan</h1>
+        <h3>And I'm a <span class="multiple-text"></span></h3>
+        <div class="social-media">
+          <a href="https://www.facebook.com/wildanz.doank.7"><i class="bx bxl-facebook"></i></a>
+          <a href="https://www.instagram.com/_wildanemrldi?igsh=ZHY4Mjh5amY0dmxj"><i class="bx bxl-instagram-alt"></i></a>
+          <a href="https://youtube.com/@daynnn6381?si=xg-UpAr85jHaGLVL"><i class="bx bxl-youtube"></i></a>
+        </div>
+        <a
+          href="https://drive.google.com/file/d/1Wd4dfxIenZIbufA35su8IkLEVlwTOuc7/view?usp=drive_link"
+          class="btn"
+          >Download CV</a
+        >
+      </div>
+
+      <div class="home-img">
+        <img src="image/home1.png" alt="home" />
+      </div>
+    </section>
+    <!-- Home section end -->
+
+    <!-- About section -->
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="image/profile.png.png" alt="about" />
+      </div>
+
+      <div class="about-content">
+        <h2 class="heading">About <span>Me</span></h2>
+        <!-- <h3>Frontend Web Developer!</h3> -->
+        <p>
+          Let me introduce myself, my name is Wildan Emeraldi Mubarok, and i 18 years old |
+           Bachelor of Computer and Network Engineering | Understand in
+          HTML, CSS, JS, Network Configuration, Network Structure, Basic Programing and Database | Eager to
+          Bring Problem-Solving and Critical Thinking Skills to Your Team.
+        </p>
+        <a href="#services" class="btn">Read More</a>
+      </div>
+    </section>
+    <!-- About section end -->
+
+    <!-- Services section -->
+    <section class="services" id="services">
+      <h2 class="heading">Our <span>Services</span></h2>
+
+      <div class="services-container">
+        <div class="services-box">
+          <i class="bx bx-code-alt"></i>
+          <h3>Front End</h3>
+          <p>
+            Front-End is the part of the application that is visible and used directly by the user (end-user).
+          </p>
+          <a href="https://www.dicoding.com/blog/apa-itu-back-end/" class="btn">Read More</a>
+        </div>
+
+        <div class="services-box">
+          <i class='bx bx-wifi'></i>
+          <h3>Networking</h3>
+          <p>
+            Networking is an effort made to connect several computer devices to make it easier to exchange information.
+          </p>
+          <a href="https://asani.co.id/blog/it-networking-adalah/" class="btn">Read More</a>
+        </div>
+
+        <div class="services-box">
+          <i class="bx bx-data"></i>
+          <h3>Back End</h3>
+          <p>
+            Back-End is the part of the application that is responsible for providing needs that are invisible to the user (not interacting directly with the user), such as how data is stored, processed and transacted securely.
+          </p>
+          <a href="https://www.dicoding.com/blog/apa-itu-back-end/" class="btn">Read More</a>
+        </div>
+      </div>
+    </section>
+    <!-- Services section end -->
+
+    <!-- Portfolio section -->
+    <section class="portfolio" id="portfolio">
+      <h2 class="heading">ACHIEVE<span>MENT</span></h2>
+
+      <div class="portfolio-container">
+        
+
+        
+        <div class="portfolio-box">
+          <img src="image/certificate 2.jpg" alt="certificate" />
+          <div class="portfolio-layer">
+            <h4>Certificate</h4>
+            <p>
+              Experience of practice at the agency for 4 monts
+            </p>
+            <a href="https://pa-banjarkota.go.id/"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img src="image/certificate.jpg" alt="certificate" />
+          <div class="portfolio-layer">
+            <h4>Course Of Cyber Security</h4>
+            <p>
+              Experience learning in Cyber Academy
+            </p>
+            <a href="https://www.cyberacademy.id/"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+
+        
+    </section>
+    <!-- Portfolio section end -->
+
+    <!-- Contact section -->
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact <span>Me</span></h2>
+
+      <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
+        <strong>Terimakasih!</strong> Pesan anda sudah kami terima.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+      <form action="" name="contact-form" class="form-contact">
+        <div class="input-box">
+          <input type="text" placeholder="Full Name" required
+          oninvalid="this.setCustomValidity('Mohon isi kolom ini')" oninput="this.setCustomValidity('')" name="nama"/>
+
+          <input type="tel" placeholder="Mobile Number" id="Mobile Number"
+           pattern="(\+62|62|0)8[1-9][0-9]{6,9}$" required
+           oninvalid="this.setCustomValidity('Mohon isi kolom ini')" oninput="this.setCustomValidity('')" name="no-hp"/>
+
+        </div>
+        <div class="input-box">
+           <input type="email" placeholder="Email Address" required
+          oninvalid="this.setCustomValidity('Mohon isi kolom ini')" oninput="this.setCustomValidity('')" name="email"/>
+
+        </div>
+        <div class="input-message">
+        <textarea
+          name="pesan"
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="Your Message"
+          
+         ></textarea>
+        <input type="submit" value="Send Message" class="btn btn-kirim" />
+        <button class="btn btn-primary btn-loading d-none" type="button" disabled>
+          <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
+          <span role="status">Loading...</span>
+        </button>
+      </div>
+      </form>
+    </section>
+
+  
+    <!-- Contact section end-->
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer-text">
+        <p>Copyright &copy; 2024 by Wildan | All Rights Reserved.</p>
+      </div>
+
+      <div class="footer-iconTop">
+        <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+      </div>
+    </footer>
+    <!-- footer end -->
+
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- typed js -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- custom js -->
+    <script src="main.js"></script>
+    
+  </body>
+</html>
